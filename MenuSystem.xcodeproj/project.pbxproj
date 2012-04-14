@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0DA11515396765005D09BB /* BaseAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0DA11415396765005D09BB /* BaseAppKit.framework */; };
+		1F0DA11815396958005D09BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0DA11715396958005D09BB /* QuartzCore.framework */; };
+		1F0DA12315396A73005D09BB /* help-about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1F0DA11D15396A73005D09BB /* help-about.html */; };
+		1F0DA12415396A73005D09BB /* help-content.html in Resources */ = {isa = PBXBuildFile; fileRef = 1F0DA11F15396A73005D09BB /* help-content.html */; };
+		1F0DA12515396A73005D09BB /* help-use.html in Resources */ = {isa = PBXBuildFile; fileRef = 1F0DA12115396A73005D09BB /* help-use.html */; };
 		1FF4B2E7153965F6007D6106 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF4B2E6153965F6007D6106 /* UIKit.framework */; };
 		1FF4B2E9153965F6007D6106 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF4B2E8153965F6007D6106 /* Foundation.framework */; };
 		1FF4B2EB153965F6007D6106 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF4B2EA153965F6007D6106 /* CoreGraphics.framework */; };
@@ -15,22 +20,51 @@
 		1FF4B2F7153965F6007D6106 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B2F6153965F6007D6106 /* AppDelegate.m */; };
 		1FF4B2FA153965F6007D6106 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B2F9153965F6007D6106 /* ViewController.m */; };
 		1FF4B2FD153965F6007D6106 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FF4B2FB153965F6007D6106 /* ViewController.xib */; };
+		1FF4B3141539668C007D6106 /* MenuSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B3051539668C007D6106 /* MenuSystem.m */; };
+		1FF4B3151539668C007D6106 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B3071539668C007D6106 /* MenuViewController.m */; };
+		1FF4B3161539668C007D6106 /* MenuHelpProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B3091539668C007D6106 /* MenuHelpProvider.m */; };
+		1FF4B3171539668C007D6106 /* MenuHomeProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B30B1539668C007D6106 /* MenuHomeProvider.m */; };
+		1FF4B3181539668C007D6106 /* MenuLoginProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B30D1539668C007D6106 /* MenuLoginProvider.m */; };
+		1FF4B3191539668C007D6106 /* MenuProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B30F1539668C007D6106 /* MenuProvider.m */; };
+		1FF4B31A1539668C007D6106 /* MenuRegistrationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B3111539668C007D6106 /* MenuRegistrationProvider.m */; };
+		1FF4B31B1539668C007D6106 /* MenuTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4B3131539668C007D6106 /* MenuTextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0DA11415396765005D09BB /* BaseAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaseAppKit.framework; sourceTree = "<group>"; };
+		1F0DA11715396958005D09BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1F0DA11E15396A73005D09BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = "en.lproj/help-about.html"; sourceTree = "<group>"; };
+		1F0DA12015396A73005D09BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = "en.lproj/help-content.html"; sourceTree = "<group>"; };
+		1F0DA12215396A73005D09BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = "en.lproj/help-use.html"; sourceTree = "<group>"; };
 		1FF4B2E2153965F5007D6106 /* MenuSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF4B2E6153965F6007D6106 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FF4B2E8153965F6007D6106 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FF4B2EA153965F6007D6106 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1FF4B2EE153965F6007D6106 /* MenuSystem-Info.plist */ = {isa = PBXFileReference; path = "MenuSystem-Info.plist"; sourceTree = "<group>"; };
+		1FF4B2EE153965F6007D6106 /* MenuSystem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MenuSystem-Info.plist"; sourceTree = "<group>"; };
 		1FF4B2F0153965F6007D6106 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FF4B2F2153965F6007D6106 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1FF4B2F4153965F6007D6106 /* MenuSystem-Prefix.pch */ = {isa = PBXFileReference; path = "MenuSystem-Prefix.pch"; sourceTree = "<group>"; };
-		1FF4B2F5153965F6007D6106 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1FF4B2F4153965F6007D6106 /* MenuSystem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MenuSystem-Prefix.pch"; sourceTree = "<group>"; };
+		1FF4B2F5153965F6007D6106 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1FF4B2F6153965F6007D6106 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1FF4B2F8153965F6007D6106 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		1FF4B2F8153965F6007D6106 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1FF4B2F9153965F6007D6106 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1FF4B2FC153965F6007D6106 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		1FF4B3041539668C007D6106 /* MenuSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSystem.h; sourceTree = "<group>"; };
+		1FF4B3051539668C007D6106 /* MenuSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSystem.m; sourceTree = "<group>"; };
+		1FF4B3061539668C007D6106 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		1FF4B3071539668C007D6106 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		1FF4B3081539668C007D6106 /* MenuHelpProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuHelpProvider.h; sourceTree = "<group>"; };
+		1FF4B3091539668C007D6106 /* MenuHelpProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuHelpProvider.m; sourceTree = "<group>"; };
+		1FF4B30A1539668C007D6106 /* MenuHomeProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuHomeProvider.h; sourceTree = "<group>"; };
+		1FF4B30B1539668C007D6106 /* MenuHomeProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuHomeProvider.m; sourceTree = "<group>"; };
+		1FF4B30C1539668C007D6106 /* MenuLoginProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLoginProvider.h; sourceTree = "<group>"; };
+		1FF4B30D1539668C007D6106 /* MenuLoginProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuLoginProvider.m; sourceTree = "<group>"; };
+		1FF4B30E1539668C007D6106 /* MenuProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuProvider.h; sourceTree = "<group>"; };
+		1FF4B30F1539668C007D6106 /* MenuProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuProvider.m; sourceTree = "<group>"; };
+		1FF4B3101539668C007D6106 /* MenuRegistrationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuRegistrationProvider.h; sourceTree = "<group>"; };
+		1FF4B3111539668C007D6106 /* MenuRegistrationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuRegistrationProvider.m; sourceTree = "<group>"; };
+		1FF4B3121539668C007D6106 /* MenuTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTextViewController.h; sourceTree = "<group>"; };
+		1FF4B3131539668C007D6106 /* MenuTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0DA11815396958005D09BB /* QuartzCore.framework in Frameworks */,
 				1FF4B2E7153965F6007D6106 /* UIKit.framework in Frameworks */,
 				1FF4B2E9153965F6007D6106 /* Foundation.framework in Frameworks */,
 				1FF4B2EB153965F6007D6106 /* CoreGraphics.framework in Frameworks */,
+				1F0DA11515396765005D09BB /* BaseAppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +86,7 @@
 		1FF4B2D7153965F5007D6106 = {
 			isa = PBXGroup;
 			children = (
+				1FF4B3031539668C007D6106 /* MainMenu */,
 				1FF4B2EC153965F6007D6106 /* MenuSystem */,
 				1FF4B2E5153965F6007D6106 /* Frameworks */,
 				1FF4B2E3153965F5007D6106 /* Products */,
@@ -67,6 +104,8 @@
 		1FF4B2E5153965F6007D6106 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F0DA11715396958005D09BB /* QuartzCore.framework */,
+				1F0DA11415396765005D09BB /* BaseAppKit.framework */,
 				1FF4B2E6153965F6007D6106 /* UIKit.framework */,
 				1FF4B2E8153965F6007D6106 /* Foundation.framework */,
 				1FF4B2EA153965F6007D6106 /* CoreGraphics.framework */,
@@ -90,12 +129,38 @@
 		1FF4B2ED153965F6007D6106 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F0DA11D15396A73005D09BB /* help-about.html */,
+				1F0DA11F15396A73005D09BB /* help-content.html */,
+				1F0DA12115396A73005D09BB /* help-use.html */,
 				1FF4B2EE153965F6007D6106 /* MenuSystem-Info.plist */,
 				1FF4B2EF153965F6007D6106 /* InfoPlist.strings */,
 				1FF4B2F2153965F6007D6106 /* main.m */,
 				1FF4B2F4153965F6007D6106 /* MenuSystem-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FF4B3031539668C007D6106 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1FF4B3041539668C007D6106 /* MenuSystem.h */,
+				1FF4B3051539668C007D6106 /* MenuSystem.m */,
+				1FF4B3061539668C007D6106 /* MenuViewController.h */,
+				1FF4B3071539668C007D6106 /* MenuViewController.m */,
+				1FF4B3121539668C007D6106 /* MenuTextViewController.h */,
+				1FF4B3131539668C007D6106 /* MenuTextViewController.m */,
+				1FF4B30E1539668C007D6106 /* MenuProvider.h */,
+				1FF4B30F1539668C007D6106 /* MenuProvider.m */,
+				1FF4B30A1539668C007D6106 /* MenuHomeProvider.h */,
+				1FF4B30B1539668C007D6106 /* MenuHomeProvider.m */,
+				1FF4B30C1539668C007D6106 /* MenuLoginProvider.h */,
+				1FF4B30D1539668C007D6106 /* MenuLoginProvider.m */,
+				1FF4B3101539668C007D6106 /* MenuRegistrationProvider.h */,
+				1FF4B3111539668C007D6106 /* MenuRegistrationProvider.m */,
+				1FF4B3081539668C007D6106 /* MenuHelpProvider.h */,
+				1FF4B3091539668C007D6106 /* MenuHelpProvider.m */,
+			);
+			path = MainMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +215,9 @@
 			files = (
 				1FF4B2F1153965F6007D6106 /* InfoPlist.strings in Resources */,
 				1FF4B2FD153965F6007D6106 /* ViewController.xib in Resources */,
+				1F0DA12315396A73005D09BB /* help-about.html in Resources */,
+				1F0DA12415396A73005D09BB /* help-content.html in Resources */,
+				1F0DA12515396A73005D09BB /* help-use.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,12 +231,44 @@
 				1FF4B2F3153965F6007D6106 /* main.m in Sources */,
 				1FF4B2F7153965F6007D6106 /* AppDelegate.m in Sources */,
 				1FF4B2FA153965F6007D6106 /* ViewController.m in Sources */,
+				1FF4B3141539668C007D6106 /* MenuSystem.m in Sources */,
+				1FF4B3151539668C007D6106 /* MenuViewController.m in Sources */,
+				1FF4B3161539668C007D6106 /* MenuHelpProvider.m in Sources */,
+				1FF4B3171539668C007D6106 /* MenuHomeProvider.m in Sources */,
+				1FF4B3181539668C007D6106 /* MenuLoginProvider.m in Sources */,
+				1FF4B3191539668C007D6106 /* MenuProvider.m in Sources */,
+				1FF4B31A1539668C007D6106 /* MenuRegistrationProvider.m in Sources */,
+				1FF4B31B1539668C007D6106 /* MenuTextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1F0DA11D15396A73005D09BB /* help-about.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F0DA11E15396A73005D09BB /* en */,
+			);
+			name = "help-about.html";
+			sourceTree = "<group>";
+		};
+		1F0DA11F15396A73005D09BB /* help-content.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F0DA12015396A73005D09BB /* en */,
+			);
+			name = "help-content.html";
+			sourceTree = "<group>";
+		};
+		1F0DA12115396A73005D09BB /* help-use.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F0DA12215396A73005D09BB /* en */,
+			);
+			name = "help-use.html";
+			sourceTree = "<group>";
+		};
 		1FF4B2EF153965F6007D6106 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -208,7 +308,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -227,8 +331,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -238,6 +346,10 @@
 		1FF4B301153965F6007D6106 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MenuSystem/MenuSystem-Prefix.pch";
 				INFOPLIST_FILE = "MenuSystem/MenuSystem-Info.plist";
@@ -249,6 +361,10 @@
 		1FF4B302153965F6007D6106 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MenuSystem/MenuSystem-Prefix.pch";
 				INFOPLIST_FILE = "MenuSystem/MenuSystem-Info.plist";
@@ -276,6 +392,7 @@
 				1FF4B302153965F6007D6106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

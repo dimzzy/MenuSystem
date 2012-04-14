@@ -14,6 +14,19 @@
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize sessionId = _sessionId;
+
+- (void)registerWithName:(NSString *)name password:(NSString *)password email:(NSString *)email {
+	_sessionId = @"x";
+}
+
+- (void)loginWithName:(NSString *)name password:(NSString *)password {
+	_sessionId = @"x";
+}
+
+- (void)logout {
+	_sessionId = nil;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
